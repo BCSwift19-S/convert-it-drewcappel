@@ -46,6 +46,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="userInputChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="8m2-fE-wqT"/>
+                                </connections>
                             </textField>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNJ-ia-t6b">
                                 <rect key="frame" x="16" y="193" width="343" height="231"/>
@@ -87,6 +90,9 @@
                                     <segment title="-"/>
                                 </segments>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="signSegmentSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="zXl-8i-CR6"/>
+                                </connections>
                             </segmentedControl>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="REa-0a-VSk">
                                 <rect key="frame" x="43.333333333333343" y="444" width="288.33333333333326" height="28"/>
@@ -149,6 +155,7 @@
                         <outlet property="formulaPicker" destination="DNJ-ia-t6b" id="xNE-iM-J7g"/>
                         <outlet property="fromUnitsLabel" destination="J2e-CH-dTd" id="wOJ-9U-HJt"/>
                         <outlet property="resultsLabel" destination="kBO-LK-Wz4" id="dRU-Ry-aB7"/>
+                        <outlet property="signSegment" destination="t3j-fA-psX" id="RIe-pM-Ui3"/>
                         <outlet property="userInput" destination="uFX-2y-66M" id="8KR-Ng-Cbs"/>
                     </connections>
                 </viewController>
